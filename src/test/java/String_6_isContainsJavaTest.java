@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class String_6_ContainsJavaTest {
+public class String_6_isContainsJavaTest {
 
      @Test
     public void testContainsJavaTestHappyPass () {
@@ -16,7 +16,7 @@ public class String_6_ContainsJavaTest {
 
         boolean expectedResult = true;
 
-        String_6_ContainsJava cJ = new String_6_ContainsJava();
+        String_6_isContainsJava cJ = new String_6_isContainsJava();
         boolean actualResult = cJ.ContainsJavaAlgorithm(str);
 
        // Assertions.assertEquals(expectedResult, actualResult);
@@ -43,7 +43,7 @@ public class String_6_ContainsJavaTest {
 
         boolean expectedResult = false;
 
-        String_6_ContainsJava cJ = new String_6_ContainsJava();
+        String_6_isContainsJava cJ = new String_6_isContainsJava();
         boolean actualResult = cJ.ContainsJavaAlgorithm(str);
 
         Assertions.assertEquals(expectedResult, actualResult);

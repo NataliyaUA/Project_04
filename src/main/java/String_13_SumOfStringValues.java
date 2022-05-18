@@ -1,4 +1,4 @@
-public class String_12_SumOfStringValues {
+public class String_13_SumOfStringValues {
     public int SumOfStringValuesAlgorithm(String str) {
         if (str.length() > 0) {
             int sum = 0;

@@ -1,4 +1,4 @@
-public class String_6_ContainsJava {
+public class String_6_isContainsJava {
 
     public boolean ContainsJavaAlgorithm (String str) {
         if (!str.isEmpty()) {

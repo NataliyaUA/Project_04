@@ -1,28 +1,43 @@
-public class String_2_RemoveAlla {
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-    public String RemoveAllaAlgorithm(String str) {
-       if (str.length()!= 0) {
-           str = str.trim();
-           for (int i = 0; i< str.length(); i++){
-               if (str.charAt(i) == 'a') {
-                   str1 = str.replace("a", "");
 
-                   return str;
-               }else {
+public class String_2_RemoveAllaTest {
+    @Test
+    public void testRemoveAllaTestHappyPass() {
+        String str = "panda";
+        String expectedResult = "pnd";
 
-                   return
-               }
-           }
+        String_2_RemoveAlla rA = new String_2_RemoveAlla();
+        String actualResult = rA.RemoveAllaAlgorithm(str);
 
-       }
+        Assertions.assertEquals(expectedResult, actualResult);
+
+    }
+
+    @Test
+    public void testRemoveAllaTestNoA() {
+        String str = "    QA4Everyone   ";
+        String expectedResult = "QA4Everyone";
+
+        String_2_RemoveAlla rA = new String_2_RemoveAlla();
+        String actualResult = rA.RemoveAllaAlgorithm(str);
+
+        Assertions.assertEquals(expectedResult, actualResult);
+
+    }
+
+    @Test
+    public void testRemoveAllaIsEmpty() {
+        String str = "";
+        String expectedResult = "";
+
+        String_2_RemoveAlla rA = new String_2_RemoveAlla();
+        String actualResult = rA.RemoveAllaAlgorithm(str);
+
+        Assertions.assertEquals(expectedResult, actualResult);
 
     }
 
 }
-//Написать алгоритм RemoveAlla.
-//С помощью методов из видео1,  написать алгоритм, который принимает на вход строку.
-// Если строка валидная, то метод удаляет все буквы a из строки, если таковые имеются.
-// Метод возвращает обработанную строку.
-//Test Data:
-// “    QA4Everyone   “ →  “QA4Everyone“
-//“panda   “ → “pnd”
+

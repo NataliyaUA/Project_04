@@ -1,13 +1,13 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class String_12_SumOfStringValuesTest {
+public class String_13_SumOfStringValuesTest {
     @Test
     public void testSumOfStringValuesTestHappyPassLowerCase ()  {
         String str = "abc";
         int expectedResult = 294;
 
-        String_12_SumOfStringValues sV = new String_12_SumOfStringValues();
+        String_13_SumOfStringValues sV = new String_13_SumOfStringValues();
         int actualResult = sV.SumOfStringValuesAlgorithm(str);
 
         Assertions.assertEquals(expectedResult, actualResult);
@@ -18,7 +18,7 @@ public class String_12_SumOfStringValuesTest {
         String str = "ABC";
         int expectedResult = 198;
 
-        String_12_SumOfStringValues sV = new String_12_SumOfStringValues();
+        String_13_SumOfStringValues sV = new String_13_SumOfStringValues();
         int actualResult = sV.SumOfStringValuesAlgorithm(str);
 
         Assertions.assertEquals(expectedResult, actualResult);
@@ -29,7 +29,7 @@ public class String_12_SumOfStringValuesTest {
         String str = "123";
         int expectedResult = 0;
 
-        String_12_SumOfStringValues sV = new String_12_SumOfStringValues();
+        String_13_SumOfStringValues sV = new String_13_SumOfStringValues();
         int actualResult = sV.SumOfStringValuesAlgorithm(str);
 
         Assertions.assertEquals(expectedResult, actualResult);
@@ -40,7 +40,7 @@ public class String_12_SumOfStringValuesTest {
         String str = "";
         int expectedResult = 0;
 
-        String_12_SumOfStringValues sV = new String_12_SumOfStringValues();
+        String_13_SumOfStringValues sV = new String_13_SumOfStringValues();
         int actualResult = sV.SumOfStringValuesAlgorithm(str);
 
         Assertions.assertEquals(expectedResult, actualResult);
